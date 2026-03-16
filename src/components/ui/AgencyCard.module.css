@@ -1,0 +1,38 @@
+.card {
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+}
+
+.body {
+  padding: 24px;
+}
+
+.name {
+  font-family: var(--font-sans);
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--black);
+  margin-bottom: 10px;
+}
+
+.address,
+.phone {
+  font-size: 15px;
+  color: var(--mid-gray);
+  line-height: 1.6;
+}
+
+.phone {
+  margin-top: 4px;
+  font-weight: 500;
+  color: var(--black);
+}
+
+.text {
+  font-size: 15px;
+  color: var(--mid-gray);
+  line-height: 1.6;
+  margin-top: 12px;
+}

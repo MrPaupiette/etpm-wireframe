@@ -1,0 +1,245 @@
+/* BLOC 1 — HERO PROJET */
+.hero {
+  padding: 60px 0 80px;
+}
+
+.heroTags {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.heroTitle {
+  font-family: var(--font-serif);
+  font-size: 36px;
+  font-weight: 400;
+  color: var(--black);
+  margin-bottom: 28px;
+  line-height: 1.2;
+}
+
+/* BLOC 2 — FICHE SYNTHÈSE */
+.fiche {
+  background: var(--surface);
+  padding: var(--section-gap) 0;
+}
+
+.ficheGrid {
+  display: grid;
+  grid-template-columns: 4fr 6fr;
+  gap: 48px;
+  align-items: start;
+}
+
+.ficheData {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.ficheRow {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.ficheLabel {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--light-gray);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.ficheValue {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--black);
+}
+
+.ficheDescription {
+  font-size: 16px;
+  color: var(--mid-gray);
+  line-height: 1.7;
+  margin-top: 16px;
+}
+
+/* BLOC 3 — GALERIE */
+.galerie {
+  padding: var(--section-gap) 0;
+}
+
+.galerieGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+/* BLOC 4 — TÉMOIGNAGE */
+.testimonial {
+  background: var(--surface);
+  padding: var(--section-gap) 0;
+  display: flex;
+  justify-content: center;
+}
+
+/* BLOC 5 — EXPERTISES MOBILISÉES */
+.expertises {
+  padding: var(--section-gap) 0;
+}
+
+.expertisesGrid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.expertiseCard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.06);
+  padding: 24px 28px;
+  font-family: var(--font-sans);
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--black);
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.expertiseCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* BLOC 6 — TERRITOIRE */
+.territoire {
+  background: var(--surface);
+  padding: var(--section-gap) 0;
+}
+
+.territoireText {
+  font-size: 16px;
+  color: var(--mid-gray);
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+
+.contextualLink {
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--black);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  transition: opacity 0.2s;
+}
+.contextualLink:hover {
+  opacity: 0.6;
+}
+
+/* BLOC 7 — NAVIGATION PROJETS */
+.navigation {
+  padding: 48px 0;
+}
+
+.navGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  margin-bottom: 32px;
+}
+
+.navItem {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  text-decoration: none;
+  color: var(--black);
+  transition: opacity 0.2s;
+}
+.navItem:hover {
+  opacity: 0.6;
+}
+
+.navItemRight {
+  justify-content: flex-end;
+  text-align: right;
+}
+
+.navArrow {
+  font-size: 24px;
+  flex-shrink: 0;
+}
+
+.navTitle {
+  font-family: var(--font-sans);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.navLabel {
+  font-size: 13px;
+  color: var(--light-gray);
+}
+
+.navBack {
+  text-align: center;
+}
+
+/* BLOC 8 — CTA FINAL */
+.ctaFinal {
+  background: var(--black);
+  padding: 80px 0;
+}
+
+.ctaFinalInner {
+  text-align: center;
+}
+
+.ctaFinalTitle {
+  font-family: var(--font-serif);
+  font-size: 36px;
+  color: var(--white);
+  margin-bottom: 16px;
+}
+
+.ctaFinalText {
+  font-size: 17px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 32px;
+  line-height: 1.6;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .heroTitle {
+    font-size: 28px;
+  }
+  .ficheGrid {
+    grid-template-columns: 1fr;
+  }
+  .galerieGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .navGrid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .navItemRight {
+    justify-content: flex-start;
+    text-align: left;
+  }
+  .ctaFinalTitle {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 480px) {
+  .galerieGrid {
+    grid-template-columns: 1fr;
+  }
+}

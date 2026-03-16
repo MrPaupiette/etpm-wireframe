@@ -1,0 +1,36 @@
+.counter {
+  text-align: center;
+}
+
+.value {
+  display: block;
+  font-family: var(--font-serif);
+  font-size: 56px;
+  font-weight: 400;
+  color: var(--black);
+  line-height: 1.1;
+  margin-bottom: 8px;
+}
+
+.label {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  color: var(--mid-gray);
+}
+
+.light .value {
+  color: var(--white);
+}
+
+.light .label {
+  color: var(--light-gray);
+}
+
+@media (max-width: 768px) {
+  .value {
+    font-size: 40px;
+  }
+  .label {
+    font-size: 13px;
+  }
+}

@@ -1,0 +1,35 @@
+.wrapper {
+  margin-bottom: 48px;
+}
+
+.title {
+  font-family: var(--font-serif);
+  font-size: 42px;
+  font-weight: 400;
+  color: var(--black);
+  margin-bottom: 16px;
+}
+
+.light .title {
+  color: var(--white);
+}
+
+.chapeau {
+  font-size: 17px;
+  color: var(--mid-gray);
+  line-height: 1.6;
+  max-width: 700px;
+}
+
+.light .chapeau {
+  color: var(--light-gray);
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 28px;
+  }
+  .chapeau {
+    font-size: 15px;
+  }
+}

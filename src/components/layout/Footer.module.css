@@ -1,0 +1,121 @@
+.footer {
+  background: var(--black);
+  color: var(--white);
+  padding: 80px 0;
+}
+
+.columns {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.columnTitle {
+  font-family: var(--font-sans);
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--light-gray);
+  margin-bottom: 20px;
+}
+
+.columnList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.columnLink {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+  transition: color 0.2s;
+}
+.columnLink:hover {
+  color: var(--white);
+}
+
+/* Groupe Synelis band */
+.groupe {
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  padding-top: 32px;
+  margin-bottom: 32px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.groupeLabel {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--light-gray);
+}
+
+.groupeLinks {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.groupeLink {
+  font-size: 14px;
+  color: var(--light-gray);
+  transition: color 0.2s;
+}
+.groupeLink:hover {
+  color: var(--white);
+}
+
+/* Copyright */
+.copyright {
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  padding-top: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+  font-size: 13px;
+  color: var(--light-gray);
+}
+
+.copyrightLinks {
+  display: flex;
+  gap: 12px;
+}
+.copyrightLinks a {
+  color: var(--light-gray);
+  transition: color 0.2s;
+}
+.copyrightLinks a:hover {
+  color: var(--white);
+}
+
+.seoLine {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 60px 0;
+  }
+  .columns {
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+  }
+  .copyright {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 480px) {
+  .columns {
+    grid-template-columns: 1fr;
+  }
+}

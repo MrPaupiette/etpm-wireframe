@@ -1,0 +1,18 @@
+.placeholder {
+  background: var(--placeholder-bg);
+  border-radius: var(--radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.text {
+  font-size: 14px;
+  color: var(--light-gray);
+  text-align: center;
+  line-height: 1.5;
+  max-width: 80%;
+}

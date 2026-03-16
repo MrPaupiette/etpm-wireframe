@@ -1,0 +1,211 @@
+/* BLOC 1 — HERO RECRUTEMENT */
+.hero {
+  padding: 60px 0 80px;
+}
+
+.heroGrid {
+  display: grid;
+  grid-template-columns: 55fr 45fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.heroTitle {
+  font-family: var(--font-serif);
+  font-size: 42px;
+  font-weight: 400;
+  color: var(--black);
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.heroText {
+  font-size: 17px;
+  color: var(--mid-gray);
+  line-height: 1.7;
+  margin-bottom: 28px;
+}
+
+.heroCtas {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+/* BLOC 2 — POURQUOI ETPM */
+.pourquoi {
+  background: var(--surface);
+  padding: var(--section-gap) 0;
+}
+
+.pourquoiGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+}
+
+.pourquoiCard {
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 32px;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.06);
+}
+
+.pourquoiIcon {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.pourquoiCardTitle {
+  font-family: var(--font-sans);
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--black);
+  margin-bottom: 12px;
+}
+
+.pourquoiCardText {
+  font-size: 15px;
+  color: var(--mid-gray);
+  line-height: 1.7;
+}
+
+/* BLOC 3 — CHIFFRES EMPLOI */
+.chiffres {
+  background: var(--black);
+  padding: 80px 0;
+}
+
+.chiffresGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+  text-align: center;
+}
+
+/* BLOC 4 — LES 4 PORTES D'ENTRÉE */
+.portes {
+  padding: var(--section-gap) 0;
+}
+
+.portesGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+}
+
+/* BLOC 5 — TÉMOIGNAGE */
+.temoignage {
+  background: var(--surface);
+  padding: var(--section-gap) 0;
+}
+
+.temoignageGrid {
+  display: grid;
+  grid-template-columns: 40fr 60fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.temoignageContent {
+  display: flex;
+  align-items: center;
+}
+
+/* BLOC 6 — MAILLAGE INTER-SITES */
+.interSites {
+  padding: var(--section-gap) 0;
+}
+
+.interSitesInner {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.interSitesText {
+  font-size: 16px;
+  color: var(--mid-gray);
+  line-height: 1.7;
+  margin-bottom: 24px;
+}
+
+.interSitesLinks {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.interSiteLink {
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--black);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  transition: opacity 0.2s;
+}
+.interSiteLink:hover {
+  opacity: 0.6;
+}
+
+/* BLOC 7 — CTA FINAL */
+.ctaFinal {
+  background: var(--black);
+  padding: 80px 0;
+}
+
+.ctaFinalInner {
+  text-align: center;
+}
+
+.ctaFinalTitle {
+  font-family: var(--font-serif);
+  font-size: 36px;
+  color: var(--white);
+  margin-bottom: 16px;
+}
+
+.ctaFinalText {
+  font-size: 17px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 32px;
+  line-height: 1.6;
+}
+
+.ctaFinalButtons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .heroGrid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .heroTitle {
+    font-size: 28px;
+  }
+  .pourquoiGrid {
+    grid-template-columns: 1fr;
+  }
+  .chiffresGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+  .portesGrid {
+    grid-template-columns: 1fr;
+  }
+  .temoignageGrid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .ctaFinalTitle {
+    font-size: 26px;
+  }
+}

@@ -1,0 +1,171 @@
+/* BLOC 1 — HERO LÉGER */
+.hero {
+  padding: 60px 0 80px;
+}
+
+.heroTitle {
+  font-family: var(--font-serif);
+  font-size: 42px;
+  font-weight: 400;
+  color: var(--black);
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.heroText {
+  font-size: 17px;
+  color: var(--mid-gray);
+  line-height: 1.7;
+  max-width: 800px;
+}
+
+/* BLOC 2 — CARTE DES AGENCES */
+.carte {
+  background: var(--surface);
+  padding: var(--section-gap) 0;
+}
+
+.carteGrid {
+  display: grid;
+  grid-template-columns: 55fr 45fr;
+  gap: 48px;
+  align-items: start;
+}
+
+.carteLegend {
+  font-size: 13px;
+  color: var(--light-gray);
+  margin-top: 12px;
+}
+
+.zoneGroup {
+  margin-bottom: 28px;
+}
+
+.zoneGroupTitle {
+  font-family: var(--font-sans);
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--black);
+  margin-bottom: 6px;
+}
+
+.zoneGroupAgences {
+  font-size: 15px;
+  color: var(--mid-gray);
+  line-height: 1.6;
+  margin-bottom: 8px;
+}
+
+.contextualLink {
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--black);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  transition: opacity 0.2s;
+}
+.contextualLink:hover {
+  opacity: 0.6;
+}
+
+.zoneComplement {
+  font-size: 14px;
+  color: var(--light-gray);
+  margin-top: 8px;
+}
+
+/* BLOC 3 — 3 CARDS TERRITOIRES */
+.territoires {
+  padding: var(--section-gap) 0;
+}
+
+.territoiresGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+/* BLOC 4 — EXPERTISES SUR LE TERRAIN */
+.expertises {
+  background: var(--surface);
+  padding: var(--section-gap) 0;
+}
+
+.expertisesGrid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+
+.expertiseCard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.06);
+  padding: 24px 16px;
+  font-family: var(--font-sans);
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--black);
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.expertiseCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* BLOC 5 — CTA FINAL */
+.ctaFinal {
+  background: var(--black);
+  padding: 80px 0;
+}
+
+.ctaFinalInner {
+  text-align: center;
+}
+
+.ctaFinalTitle {
+  font-family: var(--font-serif);
+  font-size: 36px;
+  color: var(--white);
+  margin-bottom: 16px;
+}
+
+.ctaFinalText {
+  font-size: 17px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 32px;
+  line-height: 1.6;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .heroTitle {
+    font-size: 28px;
+  }
+  .carteGrid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .territoiresGrid {
+    grid-template-columns: 1fr;
+  }
+  .expertisesGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .ctaFinalTitle {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 480px) {
+  .expertisesGrid {
+    grid-template-columns: 1fr;
+  }
+}

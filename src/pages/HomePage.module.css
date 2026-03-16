@@ -1,0 +1,277 @@
+/* BLOC 1 — HERO */
+.hero {
+  position: relative;
+  height: 100vh;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.heroBg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  aspect-ratio: auto;
+}
+
+.heroOverlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.heroContent {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  max-width: 900px;
+}
+
+.heroTitle {
+  font-family: var(--font-serif);
+  font-size: 56px;
+  font-weight: 400;
+  color: var(--white);
+  margin-bottom: 20px;
+  line-height: 1.15;
+}
+
+.heroSub {
+  font-size: 17px;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 36px;
+  line-height: 1.6;
+}
+
+.heroCtas {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* BLOC 2 — INTRO */
+.intro {
+  padding: var(--section-gap) 0;
+}
+
+.introInner {
+  text-align: center;
+  max-width: 800px;
+}
+
+.introTitle {
+  font-family: var(--font-serif);
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.introText {
+  font-size: 17px;
+  color: var(--mid-gray);
+  line-height: 1.7;
+  margin-bottom: 24px;
+}
+
+.introLink {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--black);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  transition: opacity 0.2s;
+}
+.introLink:hover {
+  opacity: 0.6;
+}
+
+/* BLOC 3 — EXPERTISES */
+.expertises {
+  background: var(--surface);
+  padding: var(--section-gap) 0;
+}
+
+.expertisesGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+/* Center last 2 cards */
+.expertisesGrid > :nth-child(4) {
+  grid-column: 1 / 2;
+}
+
+/* Use a trick: 5 items, 3 cols → row1: 3, row2: 2 left-aligned.
+   We offset the 4th and 5th to be centered */
+@supports (grid-template-columns: repeat(3, 1fr)) {
+  .expertisesGrid {
+    justify-items: center;
+  }
+  .expertisesGrid > * {
+    width: 100%;
+  }
+}
+
+/* BLOC 4 — CHIFFRES */
+.chiffres {
+  background: var(--black);
+  padding: var(--section-gap) 0;
+}
+
+.chiffresGrid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 32px;
+}
+
+.counterWithLink {
+  text-align: center;
+}
+
+.counterLabel {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  color: var(--light-gray);
+}
+
+.synelis {
+  color: var(--light-gray);
+  text-decoration: none;
+  transition: text-decoration 0.2s;
+}
+.synelis:hover {
+  text-decoration: underline;
+}
+
+/* BLOC 5 — TERRITOIRES */
+.territoires {
+  padding: var(--section-gap) 0;
+}
+
+.territoiresGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+/* BLOC 6 — RÉALISATIONS */
+.realisations {
+  background: var(--surface);
+  padding: var(--section-gap) 0;
+}
+
+.realisationsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.realisationsCta {
+  text-align: center;
+  margin-top: 48px;
+}
+
+/* BLOC 7 — REJOINDRE */
+.rejoindre {
+  background: var(--black);
+  padding: var(--section-gap) 0;
+}
+
+.rejoindreInner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.rejoindreTitle {
+  font-family: var(--font-serif);
+  font-size: 42px;
+  color: var(--white);
+  margin-bottom: 20px;
+}
+
+.rejoindreParagraph {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.7;
+  margin-bottom: 28px;
+}
+
+.rejoindreLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 32px;
+}
+
+.rejoindreLink {
+  font-size: 15px;
+  color: var(--white);
+  transition: text-decoration 0.2s;
+}
+.rejoindreLink:hover {
+  text-decoration: underline;
+}
+
+/* BLOC 8 — CTA FINAL */
+.ctaFinal {
+  padding: 80px 0;
+}
+
+.ctaFinalInner {
+  text-align: center;
+}
+
+.ctaFinalText {
+  font-family: var(--font-serif);
+  font-size: 28px;
+  color: var(--black);
+  margin-bottom: 28px;
+  line-height: 1.4;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .heroTitle {
+    font-size: 36px;
+  }
+  .heroSub {
+    font-size: 15px;
+  }
+  .introTitle {
+    font-size: 28px;
+  }
+  .expertisesGrid,
+  .territoiresGrid,
+  .realisationsGrid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .chiffresGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px 16px;
+  }
+  .chiffresGrid > :last-child {
+    grid-column: 1 / -1;
+  }
+  .rejoindreInner {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .rejoindreTitle {
+    font-size: 28px;
+  }
+  .ctaFinalText {
+    font-size: 22px;
+  }
+}

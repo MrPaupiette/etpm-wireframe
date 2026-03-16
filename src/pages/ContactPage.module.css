@@ -1,0 +1,96 @@
+/* BLOC 1 — HERO */
+.hero {
+  padding: 60px 0 48px;
+}
+
+.heroTitle {
+  font-family: var(--font-serif);
+  font-size: 42px;
+  font-weight: 400;
+  color: var(--black);
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.heroText {
+  font-size: 17px;
+  color: var(--mid-gray);
+  line-height: 1.7;
+  max-width: 800px;
+}
+
+/* BLOC 2 — FORMULAIRE + INFOS */
+.formulaire {
+  padding: var(--section-gap) 0;
+}
+
+.formulaireGrid {
+  display: grid;
+  grid-template-columns: 60fr 40fr;
+  gap: 48px;
+  align-items: start;
+}
+
+.infos {
+  background: var(--surface);
+  border-radius: var(--radius);
+  padding: 32px;
+}
+
+.infosTitle {
+  font-family: var(--font-sans);
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--black);
+  margin-bottom: 20px;
+}
+
+.infoItem {
+  margin-bottom: 20px;
+}
+
+.infoLabel {
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--black);
+  margin-bottom: 4px;
+}
+
+.infoValue {
+  font-size: 15px;
+  color: var(--mid-gray);
+  line-height: 1.6;
+}
+
+/* BLOC 3 — NOS AGENCES */
+.agences {
+  background: var(--surface);
+  padding: var(--section-gap) 0;
+}
+
+/* BLOC 4 — ACCÈS RAPIDES */
+.acces {
+  padding: var(--section-gap) 0;
+}
+
+.accesGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .heroTitle {
+    font-size: 28px;
+  }
+  .formulaireGrid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .accesGrid {
+    grid-template-columns: 1fr;
+  }
+}

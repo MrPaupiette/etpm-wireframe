@@ -1,0 +1,351 @@
+/* BLOC 1 — HERO */
+.hero {
+  padding: 60px 0 80px;
+}
+
+.heroGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.heroTitle {
+  font-family: var(--font-serif);
+  font-size: 42px;
+  font-weight: 400;
+  color: var(--black);
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.heroText {
+  font-size: 17px;
+  color: var(--mid-gray);
+  line-height: 1.7;
+  margin-bottom: 28px;
+}
+
+/* BLOC 2 — ENJEUX */
+.enjeux {
+  background: var(--surface);
+  padding: var(--section-gap) 0;
+}
+
+.enjeuxInner {
+  max-width: 800px;
+}
+
+.enjeuxText {
+  font-size: 16px;
+  color: var(--mid-gray);
+  line-height: 1.7;
+  margin-top: 24px;
+}
+
+/* BLOC 3 — INTERVENTIONS */
+.interventions {
+  padding: var(--section-gap) 0;
+}
+
+.interventionsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+}
+
+.interventionCard {
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.interventionCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+.interventionBody {
+  padding: 24px;
+}
+
+.interventionTitle {
+  font-family: var(--font-sans);
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--black);
+  margin-bottom: 10px;
+}
+
+.interventionText {
+  font-size: 15px;
+  color: var(--mid-gray);
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+/* Shared contextual link */
+.contextualLink {
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--black);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  transition: opacity 0.2s;
+}
+.contextualLink:hover {
+  opacity: 0.6;
+}
+
+/* BLOC 4 — LED DÉTAIL */
+.ledDetail {
+  background: var(--surface);
+  padding: var(--section-gap) 0;
+}
+
+.ledDetailGrid {
+  display: grid;
+  grid-template-columns: 6fr 4fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.ledDetailText {
+  font-size: 16px;
+  color: var(--mid-gray);
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.ledDetailLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* BLOC 5 — SOLAIRE */
+.solaire {
+  padding: var(--section-gap) 0;
+}
+
+.solaireGrid {
+  display: grid;
+  grid-template-columns: 4fr 6fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.solaireText {
+  font-size: 16px;
+  color: var(--mid-gray);
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+/* BLOC 6 — MÂTS */
+.mats {
+  background: var(--surface);
+  padding: var(--section-gap) 0;
+}
+
+.matsText {
+  font-size: 16px;
+  color: var(--mid-gray);
+  line-height: 1.7;
+  margin-bottom: 32px;
+  max-width: 800px;
+}
+
+.matsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+/* BLOC 7 — ZONES */
+.zones {
+  padding: var(--section-gap) 0;
+}
+
+.zonesGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+  margin-bottom: 24px;
+}
+
+.zoneCard {
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.06);
+  padding: 32px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.zoneCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+.zoneTitle {
+  font-family: var(--font-sans);
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--black);
+  margin-bottom: 10px;
+}
+
+.zoneText {
+  font-size: 15px;
+  color: var(--mid-gray);
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+/* BLOC 8 — PARTENAIRE */
+.partenaire {
+  background: var(--surface);
+  padding: var(--section-gap) 0;
+}
+
+.partenaireGrid {
+  display: grid;
+  grid-template-columns: 6fr 4fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.partenaireText {
+  font-size: 16px;
+  color: var(--mid-gray);
+  line-height: 1.7;
+  margin-bottom: 28px;
+}
+
+.miniCounters {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 28px;
+}
+
+.miniCounter {
+  text-align: center;
+}
+
+.miniValue {
+  display: block;
+  font-family: var(--font-serif);
+  font-size: 36px;
+  color: var(--black);
+  line-height: 1.1;
+}
+
+.miniLabel {
+  font-size: 13px;
+  color: var(--light-gray);
+}
+
+.partenaireCtas {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+/* BLOC 9 — FAQ */
+.faq {
+  padding: var(--section-gap) 0;
+}
+
+.faqInner {
+  max-width: 800px;
+}
+
+/* BLOC 10 — AUTRES */
+.autres {
+  background: var(--surface);
+  padding: var(--section-gap) 0;
+}
+
+.autresGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+/* BLOC 11 — CTA FINAL */
+.ctaFinal {
+  background: var(--black);
+  padding: 80px 0;
+}
+
+.ctaFinalInner {
+  text-align: center;
+}
+
+.ctaFinalTitle {
+  font-family: var(--font-serif);
+  font-size: 36px;
+  color: var(--white);
+  margin-bottom: 16px;
+}
+
+.ctaFinalText {
+  font-size: 17px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 32px;
+  line-height: 1.6;
+}
+
+.ctaFinalButtons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .heroGrid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .heroTitle {
+    font-size: 28px;
+  }
+  .interventionsGrid {
+    grid-template-columns: 1fr;
+  }
+  .ledDetailGrid,
+  .solaireGrid,
+  .partenaireGrid {
+    grid-template-columns: 1fr;
+  }
+  .matsGrid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .zonesGrid {
+    grid-template-columns: 1fr;
+  }
+  .autresGrid {
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+  .ctaFinalTitle {
+    font-size: 26px;
+  }
+  .miniCounters {
+    gap: 24px;
+  }
+  .miniValue {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .autresGrid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,125 @@
+/* BLOC 1 — HERO LÉGER */
+.hero {
+  padding: 60px 0 80px;
+}
+
+.heroTitle {
+  font-family: var(--font-serif);
+  font-size: 42px;
+  font-weight: 400;
+  color: var(--black);
+  margin-bottom: 20px;
+}
+
+.heroText {
+  font-size: 17px;
+  color: var(--mid-gray);
+  line-height: 1.7;
+  max-width: 800px;
+}
+
+/* BLOC 2 — GRILLE */
+.grid {
+  background: var(--surface);
+  padding: var(--section-gap) 0;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+}
+
+/* Center the 5th card */
+.cards > :nth-child(5) {
+  grid-column: 1 / -1;
+  max-width: calc(50% - 14px);
+  justify-self: center;
+}
+
+/* BLOC 3 — CTA BANDEAU */
+.cta {
+  background: var(--black);
+  padding: 80px 0;
+}
+
+.ctaInner {
+  text-align: center;
+}
+
+.ctaTitle {
+  font-family: var(--font-serif);
+  font-size: 36px;
+  color: var(--white);
+  margin-bottom: 16px;
+}
+
+.ctaText {
+  font-size: 17px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 32px;
+  line-height: 1.6;
+}
+
+.ctaButtons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* BLOC 4 — MAILLAGE */
+.maillage {
+  padding: 80px 0;
+}
+
+.maillageInner {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.maillageTitle {
+  font-family: var(--font-serif);
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.maillageText {
+  font-size: 16px;
+  color: var(--mid-gray);
+  line-height: 1.7;
+}
+
+.maillageText a {
+  color: var(--black);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: opacity 0.2s;
+}
+.maillageText a:hover {
+  opacity: 0.6;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .heroTitle {
+    font-size: 28px;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .cards > :nth-child(5) {
+    max-width: 100%;
+    grid-column: auto;
+  }
+
+  .ctaTitle {
+    font-size: 26px;
+  }
+
+  .maillageTitle {
+    font-size: 24px;
+  }
+}

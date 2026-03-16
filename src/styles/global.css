@@ -1,0 +1,30 @@
+@import './reset.css';
+@import './variables.css';
+
+body {
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--dark-gray);
+  background: var(--white);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-serif);
+  color: var(--black);
+  font-weight: 400;
+}
+
+.container {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --section-gap: 80px;
+  }
+}

@@ -1,25 +1,36 @@
 import { useEffect } from 'react'
 import { Routes, Route, useLocation } from 'react-router-dom'
 import { AnimatePresence } from 'framer-motion'
-import Header from './components/Header'
-import Footer from './components/Footer'
+import Layout from './components/layout/Layout'
 import HomePage from './pages/HomePage'
-import NotreGroupe from './pages/NotreGroupe'
-import NotreMission from './pages/NotreMission'
-import NotreHistoire from './pages/NotreHistoire'
-import NosEngagements from './pages/NosEngagements'
-import NosActivites from './pages/NosActivites'
-import NosRealisations from './pages/NosRealisations'
-import NosFiliales from './pages/NosFiliales'
-import ETPM from './pages/filiales/ETPM'
-import NousRejoindre from './pages/NousRejoindre'
-import Alternance from './pages/careers/Alternance'
-import Candidature from './pages/Candidature'
-import NosOffres from './pages/NosOffres'
-import NosMetiers from './pages/NosMetiers'
-import Actualites from './pages/Actualites'
-import Contact from './pages/Contact'
-import AIPR from './pages/resources/AIPR'
+import HubExpertises from './pages/HubExpertises'
+import VrdViabilisation from './pages/VrdViabilisation'
+import EclairagePublic from './pages/EclairagePublic'
+import IrveBornesRecharge from './pages/IrveBornesRecharge'
+import ReseauxEnergie from './pages/ReseauxEnergie'
+import TravauxPublicsTermassement from './pages/TravauxPublicsTermassement'
+import HubTerritoires from './pages/HubTerritoires'
+import TerritoireToulouse from './pages/TerritoireToulouse'
+import TerritoireBordeaux from './pages/TerritoireBordeaux'
+import TerritoirePaysBasque from './pages/TerritoirePaysBasque'
+import Realisations from './pages/Realisations'
+import ProjectPage from './pages/ProjectPage'
+import HubRecrutement from './pages/HubRecrutement'
+import EmploiTravauxPublics from './pages/EmploiTravauxPublics'
+import IndexMetiers from './pages/IndexMetiers'
+import FicheMetierPage from './pages/FicheMetierPage'
+import OffresEmploi from './pages/OffresEmploi'
+import AlternanceTP from './pages/AlternanceTP'
+import ContactPage from './pages/ContactPage'
+import RessourcePage from './pages/RessourcePage'
+import {
+  RESSOURCE_SOUDURE_PEHD,
+  RESSOURCE_RESEAU_HTA,
+  RESSOURCE_POSTE_HTA_BT,
+  RESSOURCE_RELAMPING_LED,
+  RESSOURCE_ECLAIRAGE_SOLAIRE,
+  RESSOURCE_QSE,
+} from './data/ressources'
 import PlaceholderPage from './pages/PlaceholderPage'
 
 function ScrollToTop() {
@@ -36,44 +47,40 @@ export default function App() {
   return (
     <>
       <ScrollToTop />
-      <Header />
-      <AnimatePresence mode="wait">
-        <Routes location={location} key={location.pathname}>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/notre-groupe" element={<NotreGroupe />} />
-          <Route path="/notre-groupe/mission" element={<NotreMission />} />
-          <Route path="/notre-groupe/histoire" element={<NotreHistoire />} />
-          <Route path="/notre-groupe/equipe" element={<PlaceholderPage title="Notre équipe" />} />
-          <Route path="/notre-groupe/engagements" element={<NosEngagements />} />
-          <Route path="/nos-activites" element={<NosActivites />} />
-          <Route path="/nos-activites/realisations" element={<NosRealisations />} />
-          <Route path="/nos-filiales" element={<NosFiliales />} />
-          <Route path="/nos-filiales/etpm" element={<ETPM />} />
-          <Route path="/nos-filiales/hp-elec" element={<PlaceholderPage title="HP Elec" />} />
-          <Route path="/nos-filiales/caum" element={<PlaceholderPage title="CAUM" />} />
-          <Route path="/nos-filiales/fctp" element={<PlaceholderPage title="FCTP" />} />
-          <Route path="/nos-filiales/restech" element={<PlaceholderPage title="Restech" />} />
-          <Route path="/nos-filiales/e2r" element={<PlaceholderPage title="E2R" />} />
-          <Route path="/nous-rejoindre" element={<NousRejoindre />} />
-          <Route path="/nous-rejoindre/alternance" element={<Alternance />} />
-          <Route path="/nous-rejoindre/metiers" element={<NosMetiers />} />
-          <Route path="/nous-rejoindre/carrieres-fibre" element={<PlaceholderPage title="Carrières fibre optique" />} />
-          <Route path="/nous-rejoindre/carrieres-tp" element={<PlaceholderPage title="Carrières travaux publics" />} />
-          <Route path="/nous-rejoindre/reconversion" element={<PlaceholderPage title="Reconversion BTP" />} />
-          <Route path="/nous-rejoindre/offres" element={<NosOffres />} />
-          <Route path="/nous-rejoindre/candidature" element={<Candidature />} />
-          <Route path="/actualites" element={<Actualites />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/ressources/aipr" element={<AIPR />} />
-          <Route path="/ressources/autorisation-voirie" element={<PlaceholderPage title="Autorisation de voirie" />} />
-          <Route path="/ressources/dt-dict" element={<PlaceholderPage title="Réglementation DT-DICT" />} />
-          <Route path="/ressources/certification-mase" element={<PlaceholderPage title="Certification MASE" />} />
-          <Route path="/ressources/prevention-chantier" element={<PlaceholderPage title="Prévention chantier" />} />
-          <Route path="/ressources/smart-grid" element={<PlaceholderPage title="Smart Grid" />} />
-          <Route path="*" element={<PlaceholderPage title="Page non trouvée" />} />
-        </Routes>
-      </AnimatePresence>
-      <Footer />
+      <Layout>
+        <AnimatePresence mode="wait">
+          <Routes location={location} key={location.pathname}>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/expertises" element={<HubExpertises />} />
+            <Route path="/expertises/vrd-viabilisation" element={<VrdViabilisation />} />
+            <Route path="/expertises/eclairage-public" element={<EclairagePublic />} />
+            <Route path="/expertises/irve-bornes-recharge" element={<IrveBornesRecharge />} />
+            <Route path="/expertises/reseaux-energie" element={<ReseauxEnergie />} />
+            <Route path="/expertises/travaux-publics-terrassement" element={<TravauxPublicsTermassement />} />
+            <Route path="/territoires" element={<HubTerritoires />} />
+            <Route path="/territoires/toulouse-haute-garonne" element={<TerritoireToulouse />} />
+            <Route path="/territoires/bordeaux-gironde" element={<TerritoireBordeaux />} />
+            <Route path="/territoires/pays-basque-landes" element={<TerritoirePaysBasque />} />
+            <Route path="/realisations" element={<Realisations />} />
+            <Route path="/realisations/:slug" element={<ProjectPage />} />
+            <Route path="/nous-rejoindre" element={<HubRecrutement />} />
+            <Route path="/nous-rejoindre/emploi-travaux-publics" element={<EmploiTravauxPublics />} />
+            <Route path="/nous-rejoindre/metiers" element={<IndexMetiers />} />
+            <Route path="/nous-rejoindre/alternance" element={<AlternanceTP />} />
+            <Route path="/nous-rejoindre/offres" element={<OffresEmploi />} />
+            <Route path="/ressources/soudure-pehd" element={<RessourcePage data={RESSOURCE_SOUDURE_PEHD} />} />
+            <Route path="/ressources/reseau-hta" element={<RessourcePage data={RESSOURCE_RESEAU_HTA} />} />
+            <Route path="/ressources/poste-hta-bt" element={<RessourcePage data={RESSOURCE_POSTE_HTA_BT} />} />
+            <Route path="/ressources/relamping-led" element={<RessourcePage data={RESSOURCE_RELAMPING_LED} />} />
+            <Route path="/ressources/eclairage-public-solaire" element={<RessourcePage data={RESSOURCE_ECLAIRAGE_SOLAIRE} />} />
+            <Route path="/ressources/qse-signification" element={<RessourcePage data={RESSOURCE_QSE} />} />
+            <Route path="/fiches-metiers/:slug" element={<FicheMetierPage />} />
+            <Route path="/actualites" element={<PlaceholderPage title="Actualités" />} />
+            <Route path="/contact" element={<ContactPage />} />
+            <Route path="*" element={<PlaceholderPage title="Page non trouvée" />} />
+          </Routes>
+        </AnimatePresence>
+      </Layout>
     </>
   )
 }

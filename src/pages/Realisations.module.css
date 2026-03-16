@@ -1,0 +1,142 @@
+/* BLOC 1 — HERO LÉGER */
+.hero {
+  padding: 60px 0 48px;
+}
+
+.heroTitle {
+  font-family: var(--font-serif);
+  font-size: 42px;
+  font-weight: 400;
+  color: var(--black);
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.heroText {
+  font-size: 17px;
+  color: var(--mid-gray);
+  line-height: 1.7;
+  max-width: 800px;
+}
+
+/* BLOC 2+3 — FILTRES + GRILLE */
+.galerie {
+  padding: 0 0 var(--section-gap);
+}
+
+.projectsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+/* BLOC 4 — CHIFFRES */
+.chiffres {
+  background: var(--surface);
+  padding: var(--section-gap) 0;
+}
+
+.chiffresGrid {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.chiffresSub {
+  text-align: center;
+  font-size: 14px;
+  color: var(--light-gray);
+  margin-top: 24px;
+}
+
+/* BLOC 5 — EXPERTISES */
+.expertises {
+  padding: var(--section-gap) 0;
+}
+
+.expertisesGrid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+
+.expertiseCard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.06);
+  padding: 24px 16px;
+  font-family: var(--font-sans);
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--black);
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.expertiseCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* BLOC 6 — CTA FINAL */
+.ctaFinal {
+  background: var(--black);
+  padding: 80px 0;
+}
+
+.ctaFinalInner {
+  text-align: center;
+}
+
+.ctaFinalTitle {
+  font-family: var(--font-serif);
+  font-size: 36px;
+  color: var(--white);
+  margin-bottom: 16px;
+}
+
+.ctaFinalText {
+  font-size: 17px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 32px;
+  line-height: 1.6;
+}
+
+.ctaFinalButtons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .heroTitle {
+    font-size: 28px;
+  }
+  .projectsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .chiffresGrid {
+    gap: 32px;
+  }
+  .expertisesGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .ctaFinalTitle {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 480px) {
+  .projectsGrid {
+    grid-template-columns: 1fr;
+  }
+  .expertisesGrid {
+    grid-template-columns: 1fr;
+  }
+}

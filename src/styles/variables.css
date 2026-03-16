@@ -1,0 +1,17 @@
+:root {
+  --black: #111111;
+  --dark-gray: #333333;
+  --mid-gray: #666666;
+  --light-gray: #999999;
+  --border: #E0E0E0;
+  --surface: #F5F5F5;
+  --surface-alt: #EBEBEB;
+  --white: #FFFFFF;
+  --placeholder-bg: #E8E8E8;
+  --font-serif: 'DM Serif Display', Georgia, serif;
+  --font-sans: 'Inter', -apple-system, sans-serif;
+  --section-gap: 140px;
+  --container: 1200px;
+  --radius: 20px;
+  --radius-pill: 50px;
+}

@@ -1,0 +1,150 @@
+/* BLOC 1 — HERO LÉGER */
+.hero {
+  padding: 60px 0 80px;
+}
+
+.heroTitle {
+  font-family: var(--font-serif);
+  font-size: 42px;
+  font-weight: 400;
+  color: var(--black);
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.heroText {
+  font-size: 17px;
+  color: var(--mid-gray);
+  line-height: 1.7;
+  max-width: 800px;
+}
+
+/* BLOCS 2+3 — FILTRES + GRILLE MÉTIERS */
+.metiers {
+  background: var(--surface);
+  padding: var(--section-gap) 0;
+}
+
+.metiersGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 32px;
+}
+
+/* BLOC 4 — PARCOURS D'ÉVOLUTION */
+.parcours {
+  padding: var(--section-gap) 0;
+}
+
+.parcoursTimeline {
+  max-width: 700px;
+  margin-top: 8px;
+}
+
+.parcoursSub {
+  font-size: 15px;
+  color: var(--mid-gray);
+  line-height: 1.6;
+  font-style: italic;
+  margin-top: 24px;
+  max-width: 700px;
+}
+
+/* BLOC 5 — ALTERNANCE */
+.alternance {
+  background: var(--surface);
+  padding: var(--section-gap) 0;
+}
+
+.alternanceCard {
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+}
+
+.alternanceBody {
+  padding: 32px;
+}
+
+.alternanceTitle {
+  font-family: var(--font-serif);
+  font-size: 28px;
+  font-weight: 400;
+  color: var(--black);
+  margin-bottom: 16px;
+}
+
+.alternanceText {
+  font-size: 16px;
+  color: var(--mid-gray);
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.contextualLink {
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--black);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  transition: opacity 0.2s;
+}
+.contextualLink:hover {
+  opacity: 0.6;
+}
+
+/* BLOC 6 — CTA FINAL */
+.ctaFinal {
+  background: var(--black);
+  padding: 80px 0;
+}
+
+.ctaFinalInner {
+  text-align: center;
+}
+
+.ctaFinalTitle {
+  font-family: var(--font-serif);
+  font-size: 36px;
+  color: var(--white);
+  margin-bottom: 16px;
+}
+
+.ctaFinalText {
+  font-size: 17px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 32px;
+  line-height: 1.6;
+}
+
+.ctaFinalButtons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .heroTitle {
+    font-size: 28px;
+  }
+  .metiersGrid {
+    grid-template-columns: 1fr;
+  }
+  .alternanceTitle {
+    font-size: 24px;
+  }
+  .ctaFinalTitle {
+    font-size: 26px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .metiersGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

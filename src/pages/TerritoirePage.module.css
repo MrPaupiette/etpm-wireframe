@@ -1,0 +1,193 @@
+/* BLOC 1 — HERO */
+.hero {
+  padding: 60px 0 80px;
+}
+
+.heroGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.heroTitle {
+  font-family: var(--font-serif);
+  font-size: 42px;
+  font-weight: 400;
+  color: var(--black);
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.heroText {
+  font-size: 17px;
+  color: var(--mid-gray);
+  line-height: 1.7;
+  margin-bottom: 28px;
+}
+
+/* BLOC 2 — INTERVENTIONS */
+.interventions {
+  background: var(--surface);
+  padding: var(--section-gap) 0;
+}
+
+.interventionsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+/* 5 cards → 3+2, last row centered */
+.interventionsGrid5 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.interventionCard {
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.06);
+  padding: 24px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.interventionCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+.interventionTitle {
+  font-family: var(--font-sans);
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--black);
+  margin-bottom: 8px;
+}
+
+.interventionText {
+  font-size: 15px;
+  color: var(--mid-gray);
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+.contextualLink {
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--black);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  transition: opacity 0.2s;
+}
+.contextualLink:hover {
+  opacity: 0.6;
+}
+
+/* BLOC 3 — RÉFÉRENCES */
+.references {
+  padding: var(--section-gap) 0;
+}
+
+.referencesGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  margin-bottom: 24px;
+}
+
+/* BLOC 4 — AGENCES */
+.agences {
+  background: var(--surface);
+  padding: var(--section-gap) 0;
+}
+
+.agencesGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+}
+
+.agencesGrid1 {
+  max-width: 500px;
+}
+
+/* BLOC 5 — POURQUOI */
+.pourquoi {
+  padding: var(--section-gap) 0;
+}
+
+.pourquoiInner {
+  max-width: 900px;
+}
+
+.argumentTitle {
+  font-family: var(--font-sans);
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--black);
+  margin-top: 28px;
+  margin-bottom: 8px;
+}
+
+.argumentText {
+  font-size: 16px;
+  color: var(--mid-gray);
+  line-height: 1.7;
+}
+
+/* BLOC 6 — CTA FINAL */
+.ctaFinal {
+  background: var(--black);
+  padding: 80px 0;
+}
+
+.ctaFinalInner {
+  text-align: center;
+}
+
+.ctaFinalTitle {
+  font-family: var(--font-serif);
+  font-size: 36px;
+  color: var(--white);
+  margin-bottom: 16px;
+}
+
+.ctaFinalText {
+  font-size: 17px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 32px;
+  line-height: 1.6;
+}
+
+.ctaFinalButtons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .heroGrid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .heroTitle {
+    font-size: 28px;
+  }
+  .interventionsGrid,
+  .interventionsGrid5 {
+    grid-template-columns: 1fr;
+  }
+  .referencesGrid {
+    grid-template-columns: 1fr;
+  }
+  .agencesGrid {
+    grid-template-columns: 1fr;
+  }
+  .ctaFinalTitle {
+    font-size: 26px;
+  }
+}

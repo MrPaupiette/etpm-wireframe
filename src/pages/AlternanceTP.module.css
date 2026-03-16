@@ -1,0 +1,254 @@
+/* BLOC 1 — HERO */
+.hero {
+  padding: 60px 0 80px;
+}
+
+.heroGrid {
+  display: grid;
+  grid-template-columns: 55fr 45fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.heroTitle {
+  font-family: var(--font-serif);
+  font-size: 42px;
+  font-weight: 400;
+  color: var(--black);
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.heroText {
+  font-size: 17px;
+  color: var(--mid-gray);
+  line-height: 1.7;
+  margin-bottom: 28px;
+}
+
+/* BLOC 2 — CHIFFRES */
+.chiffres {
+  background: var(--black);
+  padding: 80px 0;
+}
+
+.chiffresGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+  text-align: center;
+}
+
+/* BLOC 3 — MÉTIERS EN ALTERNANCE */
+.metiers {
+  padding: var(--section-gap) 0;
+}
+
+.metiersGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.metierCard {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.06);
+  padding: 28px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.metierCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+.metierCardTitle {
+  font-family: var(--font-sans);
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--black);
+  margin-bottom: 10px;
+}
+
+.metierCardText {
+  font-size: 15px;
+  color: var(--mid-gray);
+  line-height: 1.7;
+  margin-bottom: 14px;
+}
+
+.metierCardLink {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--black);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+/* BLOC 4 — PROCESS */
+.process {
+  background: var(--surface);
+  padding: var(--section-gap) 0;
+}
+
+.processTimeline {
+  max-width: 700px;
+  margin-top: 8px;
+}
+
+/* BLOC 5 — TÉMOIGNAGE */
+.temoignage {
+  padding: var(--section-gap) 0;
+}
+
+.temoignageGrid {
+  display: grid;
+  grid-template-columns: 40fr 60fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.temoignageContent {
+  display: flex;
+  align-items: center;
+}
+
+/* BLOC 6 — DIPLÔMES */
+.diplomes {
+  background: var(--surface);
+  padding: var(--section-gap) 0;
+}
+
+.diplomesInner {
+  max-width: 900px;
+}
+
+.diplomeBlock {
+  margin-top: 28px;
+}
+
+.diplomeTitle {
+  font-family: var(--font-sans);
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--black);
+  margin-bottom: 10px;
+}
+
+.diplomeText {
+  font-size: 16px;
+  color: var(--mid-gray);
+  line-height: 1.7;
+}
+
+.diplomeSub {
+  font-size: 15px;
+  color: var(--light-gray);
+  line-height: 1.6;
+  font-style: italic;
+  margin-top: 28px;
+}
+
+/* BLOC 7 — POSTULER */
+.postuler {
+  padding: var(--section-gap) 0;
+}
+
+.postulerInner {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.postulerText {
+  font-size: 16px;
+  color: var(--mid-gray);
+  line-height: 1.7;
+  margin-bottom: 28px;
+}
+
+.postulerCtas {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.postulerSub {
+  font-size: 14px;
+  color: var(--light-gray);
+  margin-bottom: 8px;
+}
+
+.contextualLink {
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--black);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  transition: opacity 0.2s;
+}
+.contextualLink:hover {
+  opacity: 0.6;
+}
+
+/* BLOC 8 — CTA FINAL */
+.ctaFinal {
+  background: var(--black);
+  padding: 80px 0;
+}
+
+.ctaFinalInner {
+  text-align: center;
+}
+
+.ctaFinalTitle {
+  font-family: var(--font-serif);
+  font-size: 36px;
+  color: var(--white);
+  margin-bottom: 16px;
+}
+
+.ctaFinalText {
+  font-size: 17px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 32px;
+  line-height: 1.6;
+}
+
+.ctaFinalButtons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .heroGrid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .heroTitle {
+    font-size: 28px;
+  }
+  .chiffresGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+  .metiersGrid {
+    grid-template-columns: 1fr;
+  }
+  .temoignageGrid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .ctaFinalTitle {
+    font-size: 26px;
+  }
+}

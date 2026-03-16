@@ -1,0 +1,169 @@
+/* BLOC 1 — HERO LÉGER */
+.hero {
+  padding: 60px 0 48px;
+}
+
+.heroTitle {
+  font-family: var(--font-serif);
+  font-size: 42px;
+  font-weight: 400;
+  color: var(--black);
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.heroText {
+  font-size: 17px;
+  color: var(--mid-gray);
+  line-height: 1.7;
+  max-width: 800px;
+  margin-bottom: 16px;
+}
+
+.contextualLink {
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--black);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  transition: opacity 0.2s;
+}
+.contextualLink:hover {
+  opacity: 0.6;
+}
+
+/* BLOC 2 — FILTRES */
+.filtres {
+  padding-bottom: 32px;
+}
+
+.compteur {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--light-gray);
+  margin-top: 16px;
+}
+
+/* BLOC 3 — LISTE DES OFFRES */
+.liste {
+  background: var(--surface);
+  padding: var(--section-gap) 0;
+}
+
+.listeGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.empty {
+  text-align: center;
+  padding: 48px 0;
+}
+
+.emptyText {
+  font-size: 16px;
+  color: var(--mid-gray);
+  line-height: 1.7;
+  margin-bottom: 24px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* BLOC 4 — FORMULAIRE */
+.formulaire {
+  padding: var(--section-gap) 0;
+}
+
+.formulaireIntro {
+  font-size: 16px;
+  color: var(--mid-gray);
+  line-height: 1.7;
+  max-width: 700px;
+  margin: 0 auto 32px;
+}
+
+/* BLOC 5 — CANDIDATURE SPONTANÉE */
+.spontanee {
+  background: var(--surface);
+  padding: var(--section-gap) 0;
+}
+
+.spontaneeGrid {
+  display: grid;
+  grid-template-columns: 60fr 40fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.spontaneeText {
+  font-size: 16px;
+  color: var(--mid-gray);
+  line-height: 1.7;
+  margin-bottom: 24px;
+}
+
+/* BLOC 6 — MAILLAGE RETOUR */
+.retour {
+  padding: var(--section-gap) 0;
+}
+
+.retourGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.retourCard {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.06);
+  padding: 28px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.retourCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+.retourCardTitle {
+  font-family: var(--font-sans);
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--black);
+  margin-bottom: 8px;
+}
+
+.retourCardText {
+  font-size: 15px;
+  color: var(--mid-gray);
+  line-height: 1.6;
+  margin-bottom: 14px;
+}
+
+.retourCardLink {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--black);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .heroTitle {
+    font-size: 28px;
+  }
+  .spontaneeGrid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .retourGrid {
+    grid-template-columns: 1fr;
+  }
+}

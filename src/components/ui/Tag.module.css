@@ -1,0 +1,11 @@
+.tag {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--mid-gray);
+  background: var(--surface);
+  padding: 4px 12px;
+  border-radius: var(--radius-pill);
+}

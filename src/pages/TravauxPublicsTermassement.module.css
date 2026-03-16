@@ -1,0 +1,307 @@
+/* BLOC 1 — HERO */
+.hero {
+  padding: 60px 0 80px;
+}
+
+.heroGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.heroTitle {
+  font-family: var(--font-serif);
+  font-size: 42px;
+  font-weight: 400;
+  color: var(--black);
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.heroText {
+  font-size: 17px;
+  color: var(--mid-gray);
+  line-height: 1.7;
+  margin-bottom: 28px;
+}
+
+/* BLOC 2 — NOS TRAVAUX VRD */
+.travaux {
+  background: var(--surface);
+  padding: var(--section-gap) 0;
+}
+
+.travauxGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+}
+
+.travauxCard {
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.travauxCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+.travauxBody {
+  padding: 24px;
+}
+
+.travauxTitle {
+  font-family: var(--font-sans);
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--black);
+  margin-bottom: 10px;
+}
+
+.travauxText {
+  font-size: 15px;
+  color: var(--mid-gray);
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+/* Shared contextual link */
+.contextualLink {
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--black);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  transition: opacity 0.2s;
+}
+.contextualLink:hover {
+  opacity: 0.6;
+}
+
+/* BLOC 3 — PARC MATÉRIEL */
+.materiel {
+  padding: var(--section-gap) 0;
+}
+
+.materielGrid {
+  display: grid;
+  grid-template-columns: 6fr 4fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.materielText {
+  font-size: 16px;
+  color: var(--mid-gray);
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+/* BLOC 4 — ZONES D'INTERVENTION */
+.zones {
+  background: var(--surface);
+  padding: var(--section-gap) 0;
+}
+
+.zonesGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.zoneCard {
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.zoneCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+.zoneBody {
+  padding: 28px;
+}
+
+.zoneTitle {
+  font-family: var(--font-sans);
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--black);
+  margin-bottom: 10px;
+}
+
+.zoneText {
+  font-size: 15px;
+  color: var(--mid-gray);
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+/* BLOC 5 — RÉFÉRENCES */
+.references {
+  padding: var(--section-gap) 0;
+}
+
+.referencesGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  margin-bottom: 24px;
+}
+
+/* BLOC 6 — CHIFFRES */
+.chiffres {
+  background: var(--surface);
+  padding: var(--section-gap) 0;
+}
+
+.chiffresGrid {
+  display: grid;
+  grid-template-columns: 4fr 6fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.chiffresCounters {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+}
+
+.chiffreItem {
+  text-align: center;
+}
+
+.chiffreValue {
+  display: block;
+  font-family: var(--font-serif);
+  font-size: 40px;
+  color: var(--black);
+  line-height: 1.1;
+}
+
+.chiffreLabel {
+  font-size: 14px;
+  color: var(--light-gray);
+  margin-top: 4px;
+}
+
+.chiffresText {
+  font-size: 16px;
+  color: var(--mid-gray);
+  line-height: 1.7;
+  margin-bottom: 28px;
+}
+
+.chiffresText a {
+  color: var(--black);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: opacity 0.2s;
+}
+.chiffresText a:hover {
+  opacity: 0.6;
+}
+
+/* BLOC 7 — EXPERTISE COMPLÉMENTAIRE */
+.complementaire {
+  padding: var(--section-gap) 0;
+}
+
+.complementaireGrid {
+  display: grid;
+  grid-template-columns: 4fr 6fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.complementaireText {
+  font-size: 16px;
+  color: var(--mid-gray);
+  line-height: 1.7;
+  margin-bottom: 24px;
+}
+
+.complementaireLinks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 24px;
+  margin-top: 16px;
+}
+
+/* BLOC 8 — CTA FINAL */
+.ctaFinal {
+  background: var(--black);
+  padding: 80px 0;
+}
+
+.ctaFinalInner {
+  text-align: center;
+}
+
+.ctaFinalTitle {
+  font-family: var(--font-serif);
+  font-size: 36px;
+  color: var(--white);
+  margin-bottom: 16px;
+}
+
+.ctaFinalText {
+  font-size: 17px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 32px;
+  line-height: 1.6;
+}
+
+.ctaFinalButtons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .heroGrid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .heroTitle {
+    font-size: 28px;
+  }
+  .travauxGrid {
+    grid-template-columns: 1fr;
+  }
+  .materielGrid {
+    grid-template-columns: 1fr;
+  }
+  .zonesGrid {
+    grid-template-columns: 1fr;
+  }
+  .referencesGrid {
+    grid-template-columns: 1fr;
+  }
+  .chiffresGrid {
+    grid-template-columns: 1fr;
+  }
+  .chiffresCounters {
+    gap: 20px;
+  }
+  .chiffreValue {
+    font-size: 32px;
+  }
+  .complementaireGrid {
+    grid-template-columns: 1fr;
+  }
+  .ctaFinalTitle {
+    font-size: 26px;
+  }
+}

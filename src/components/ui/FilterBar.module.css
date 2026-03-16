@@ -1,0 +1,57 @@
+.filterBar {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 32px;
+}
+
+.filterGroup {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
+
+.filterLabel {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--light-gray);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-right: 8px;
+}
+
+.pill {
+  display: inline-block;
+  padding: 6px 16px;
+  border-radius: 50px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  font-family: var(--font-sans);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--mid-gray);
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+.pill:hover {
+  border-color: var(--black);
+  color: var(--black);
+}
+
+.pillActive {
+  background: var(--black);
+  color: var(--white);
+  border-color: var(--black);
+}
+.pillActive:hover {
+  opacity: 0.85;
+  color: var(--white);
+}
+
+@media (max-width: 768px) {
+  .pill {
+    font-size: 13px;
+    padding: 5px 12px;
+  }
+}

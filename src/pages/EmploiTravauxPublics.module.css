@@ -1,0 +1,290 @@
+/* BLOC 1 — HERO */
+.hero {
+  padding: 60px 0 80px;
+}
+
+.heroTitle {
+  font-family: var(--font-serif);
+  font-size: 42px;
+  font-weight: 400;
+  color: var(--black);
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.heroText {
+  font-size: 17px;
+  color: var(--mid-gray);
+  line-height: 1.7;
+  max-width: 800px;
+  margin-bottom: 28px;
+}
+
+.heroImage {
+  margin-top: 40px;
+}
+
+/* BLOC 2 — MÉTIERS */
+.metiers {
+  background: var(--surface);
+  padding: var(--section-gap) 0;
+}
+
+.metiersGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.metierCard {
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.06);
+  padding: 28px;
+}
+
+.metierTitle {
+  font-family: var(--font-sans);
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--black);
+  margin-bottom: 12px;
+}
+
+.metierText {
+  font-size: 15px;
+  color: var(--mid-gray);
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+
+.contextualLink {
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--black);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  transition: opacity 0.2s;
+}
+.contextualLink:hover {
+  opacity: 0.6;
+}
+
+/* BLOC 3 — POURQUOI LES TP */
+.pourquoiTp {
+  padding: var(--section-gap) 0;
+}
+
+.pourquoiTpInner {
+  max-width: 900px;
+}
+
+.pourquoiTpBlock {
+  margin-top: 32px;
+}
+
+.pourquoiTpTitle {
+  font-family: var(--font-sans);
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--black);
+  margin-bottom: 12px;
+}
+
+.pourquoiTpText {
+  font-size: 16px;
+  color: var(--mid-gray);
+  line-height: 1.7;
+}
+
+/* BLOC 4 — POURQUOI ETPM */
+.pourquoiEtpm {
+  background: var(--surface);
+  padding: var(--section-gap) 0;
+}
+
+.pourquoiEtpmGrid {
+  display: grid;
+  grid-template-columns: 60fr 40fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.pourquoiEtpmText {
+  font-size: 16px;
+  color: var(--mid-gray);
+  line-height: 1.7;
+  margin-bottom: 24px;
+}
+
+.pourquoiEtpmChiffres {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  font-size: 15px;
+  color: var(--black);
+}
+
+.pourquoiEtpmChiffres strong {
+  font-weight: 700;
+}
+
+/* BLOC 5 — TÉMOIGNAGE */
+.temoignage {
+  padding: var(--section-gap) 0;
+}
+
+.temoignageAvatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 28px;
+}
+
+/* BLOC 6 — POSTES OUVERTS */
+.offres {
+  background: var(--surface);
+  padding: var(--section-gap) 0;
+}
+
+.offresGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.offresCtas {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-top: 32px;
+}
+
+/* BLOC 7 — ALTERNANCE */
+.alternance {
+  padding: var(--section-gap) 0;
+}
+
+.alternanceGrid {
+  display: grid;
+  grid-template-columns: 40fr 60fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.alternanceText {
+  font-size: 16px;
+  color: var(--mid-gray);
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+/* BLOC 8 — TERRITOIRES */
+.territoires {
+  background: var(--surface);
+  padding: var(--section-gap) 0;
+}
+
+.territoiresGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.territoireCard {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.06);
+  padding: 28px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.territoireCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+.territoireCardTitle {
+  font-family: var(--font-sans);
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--black);
+  margin-bottom: 8px;
+}
+
+.territoireCardText {
+  font-size: 15px;
+  color: var(--mid-gray);
+  line-height: 1.6;
+  margin-bottom: 14px;
+}
+
+.territoireCardLink {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--black);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+/* BLOC 9 — CTA FINAL */
+.ctaFinal {
+  background: var(--black);
+  padding: 80px 0;
+}
+
+.ctaFinalInner {
+  text-align: center;
+}
+
+.ctaFinalTitle {
+  font-family: var(--font-serif);
+  font-size: 36px;
+  color: var(--white);
+  margin-bottom: 16px;
+}
+
+.ctaFinalText {
+  font-size: 17px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 32px;
+  line-height: 1.6;
+}
+
+.ctaFinalButtons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .heroTitle {
+    font-size: 28px;
+  }
+  .metiersGrid {
+    grid-template-columns: 1fr;
+  }
+  .pourquoiEtpmGrid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .offresGrid {
+    grid-template-columns: 1fr;
+  }
+  .alternanceGrid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .territoiresGrid {
+    grid-template-columns: 1fr;
+  }
+  .ctaFinalTitle {
+    font-size: 26px;
+  }
+}

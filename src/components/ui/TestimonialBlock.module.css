@@ -1,0 +1,29 @@
+.block {
+  max-width: 800px;
+  text-align: center;
+}
+
+.quote {
+  font-family: var(--font-serif);
+  font-size: 24px;
+  font-style: italic;
+  color: var(--black);
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.author {
+  font-family: var(--font-sans);
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--black);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.role {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  color: var(--light-gray);
+  margin-top: 4px;
+}
