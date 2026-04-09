@@ -22,7 +22,23 @@ const EXPERTISES_LINKS = [
   { label: 'Éclairage public', to: '/expertises/eclairage-public' },
   { label: 'IRVE — Bornes de recharge', to: '/expertises/irve-bornes-recharge' },
   { label: 'Réseaux d\'énergie', to: '/expertises/reseaux-energie' },
-  { label: 'TP & Terrassement', to: '/expertises/travaux-publics-terrassement' },
+]
+
+const DEPARTEMENTS_COUVERTS = [
+  'Ariège',
+  'Vendée',
+  'Tarn-et-Garonne',
+  'Charente',
+  'Charente-Maritime',
+  'Dordogne',
+  'Haute-Garonne',
+  'Gers',
+  'Gironde',
+  'Landes',
+  'Lot-et-Garonne',
+  'Béarn',
+  'Pays Basque',
+  'Hautes-Pyrénées',
 ]
 
 export default function HubTerritoires() {
@@ -108,6 +124,34 @@ export default function HubTerritoires() {
               </motion.p>
             </motion.div>
           </div>
+        </div>
+      </motion.section>
+
+      {/* BLOC 2bis — DÉPARTEMENTS COUVERTS */}
+      <motion.section
+        className={styles.expertises}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, margin: '-100px' }}
+        variants={fadeIn}
+      >
+        <div className="container">
+          <SectionTitle chapeau="[1 ligne — ETPM intervient sur l'ensemble du Grand Sud-Ouest]">
+            Départements couverts
+          </SectionTitle>
+          <motion.div
+            className={styles.expertisesGrid}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: '-100px' }}
+            variants={stagger}
+          >
+            {DEPARTEMENTS_COUVERTS.map((dep) => (
+              <motion.div key={dep} variants={fadeIn}>
+                <span className={styles.expertiseCard}>{dep}</span>
+              </motion.div>
+            ))}
+          </motion.div>
         </div>
       </motion.section>
 

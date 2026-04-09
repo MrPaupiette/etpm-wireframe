@@ -44,13 +44,6 @@ const EXPERTISES = [
     tag: 'Technique — 2 720 rech/mois',
     to: '/expertises/reseaux-energie',
   },
-  {
-    image: '[Photo : aspiratrice excavatrice RSP en action sur chantier urbain ou terrassement de grande envergure avec engins lourds]',
-    title: 'Travaux publics & Terrassement',
-    text: '[2-3 lignes — terrassement VRD, tranchées et canalisations enterrées, réseaux secs et humides, parc matériel lourd avec aspiratrice-excavatrice RSP. Intervention sur tous types de sols et environnements — KW distribués : entreprise vrd (590/mois), terrassement vrd (390/mois)]',
-    tag: 'Quick win — 1 040 rech/mois',
-    to: '/expertises/travaux-publics-terrassement',
-  },
 ]
 
 export default function HubExpertises() {

@@ -11,7 +11,6 @@ const NAV = [
       { label: 'Éclairage public', to: '/expertises/eclairage-public' },
       { label: 'IRVE — Bornes de recharge', to: '/expertises/irve-bornes-recharge' },
       { label: 'Réseaux d\'énergie', to: '/expertises/reseaux-energie' },
-      { label: 'TP & Terrassement', to: '/expertises/travaux-publics-terrassement' },
     ],
   },
   {

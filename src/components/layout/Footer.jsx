@@ -6,7 +6,6 @@ const EXPERTISES = [
   { label: 'Éclairage public', to: '/expertises/eclairage-public' },
   { label: 'IRVE — Bornes de recharge', to: '/expertises/irve-bornes-recharge' },
   { label: 'Réseaux d\'énergie', to: '/expertises/reseaux-energie' },
-  { label: 'TP & Terrassement', to: '/expertises/travaux-publics-terrassement' },
 ]
 
 const TERRITOIRES = [
@@ -23,11 +22,11 @@ const REJOINDRE = [
 ]
 
 const RESSOURCES = [
-  { label: 'Soudure PEHD', to: '/ressources/soudure-pehd' },
+  { label: 'Réseaux HTB', to: '/ressources/reseaux-htb' },
   { label: 'Réseau HTA', to: '/ressources/reseau-hta' },
   { label: 'Poste HTA/BT', to: '/ressources/poste-hta-bt' },
   { label: 'Relamping LED', to: '/ressources/relamping-led' },
-  { label: 'Éclairage public solaire', to: '/ressources/eclairage-public-solaire' },
+  { label: 'Éclairage public', to: '/ressources/eclairage-public-solaire' },
   { label: 'QSE signification', to: '/ressources/qse-signification' },
 ]
 
